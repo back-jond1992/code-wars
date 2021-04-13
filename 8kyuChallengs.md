@@ -24,3 +24,19 @@ var isSquare = function(n){
   }
 
   ```
+
+## Sum of Positive
+
+```js
+
+function positiveSum(arr) {
+  let sumOfPositiveValues = 0;
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > 0) {
+      sumOfPositiveValues += arr[i];
+    }
+  }
+  return sumOfPositiveValues;
+}
+
+```
