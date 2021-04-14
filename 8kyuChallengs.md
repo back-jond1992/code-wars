@@ -40,3 +40,61 @@ function positiveSum(arr) {
 }
 
 ```
+
+## Opposite Number
+
+```js
+
+function opposite(number) {
+  return(-number);
+}
+
+```
+
+## Return Negative
+
+```js
+
+function makeNegative(num) {
+  if(num > 0) {
+    return(-num);
+  } else {
+    return num;
+  }
+}
+
+```
+
+## Remove First and Last Character
+
+```js
+
+function removeChar(str){
+    const removedCharString = str.slice(1, -1);
+    return removedCharString;
+};
+
+```
+
+## String Repeat
+
+```js
+
+function repeatStr (number, string) {
+  return string.repeat(number);
+}
+
+```
+
+## Reversed Strings
+
+```js
+
+function solution(str){
+    return str
+    .split("")
+    .reverse()
+    .join("")
+}
+
+```
