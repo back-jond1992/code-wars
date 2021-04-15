@@ -98,3 +98,53 @@ function solution(str){
 }
 
 ```
+
+## Grasshopper - Summation
+
+```js
+
+var summation = function (num) {
+  let sum = 0;
+  for(let i = 1; i <= num; i++) {
+   sum += i;
+  }
+  return sum;
+}
+
+```
+
+## Find the Smallest Integer in the Array
+
+```js
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
+```
+
+## Remove String Spaces
+
+```js
+
+function noSpace(str){
+   return str.replace(/\s+/g, '');
+}
+
+```
+
+## Convert Boolean Values to Strings
+
+```js
+
+function boolToWord( bool ){
+  if(bool === true) {
+    return "Yes";
+  } else {
+    return "No";
+  }
+}
+
+```
