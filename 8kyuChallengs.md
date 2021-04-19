@@ -148,3 +148,43 @@ function boolToWord( bool ){
 }
 
 ```
+
+## Convert a Number to a String
+
+```js
+
+function numberToString(num) {
+  return num.toString();
+}
+
+```
+
+## Counting Sheep
+
+```js
+
+function countSheeps(arrayOfSheep) {
+  let counter = [];
+  for(let i = 0; i < arrayOfSheep.length; i++) {
+    if(arrayOfSheep[i] === true) {
+      counter.push(arrayOfSheep[i]);
+    }
+  }
+  return counter.;
+}
+
+```
+
+## Sqaured Sum
+
+```js
+
+function squareSum(arr){
+    let arrayOfSquaredNumbers = arr.map(x => x ** 2)
+    let sumOfSquaredNumbers = arrayOfSquaredNumbers.reduce(function(a, b) {
+      return a + b;
+    }, 0);
+  return sumOfSquaredNumbers;
+}
+
+```
