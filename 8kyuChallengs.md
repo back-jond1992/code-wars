@@ -188,3 +188,13 @@ function squareSum(arr){
 }
 
 ```
+
+## Century From Year
+
+```js
+
+function century(year) {
+  return Math.ceil(year/100);
+}
+
+```
