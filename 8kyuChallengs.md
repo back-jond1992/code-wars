@@ -198,3 +198,37 @@ function century(year) {
 }
 
 ```
+
+## Is N Divisible by X and Y?
+
+```js
+
+function isDivisible(n, x, y) {
+  if(n % x === 0 && n % y === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+```
+
+## Basic Mathematical Operations
+
+```js
+
+function basicOp(operation, value1, value2) {
+  if(operation === '+') {
+    return value1 + value2;
+  } else if(operation === '-') {
+    return value1 - value2;
+  } else if(operation === '*') {
+    return value1 * value2;
+  } else if(operation === '/') {
+    return value1 / value2;
+  } else {
+    return "not a basic mathmatical operation";
+  }
+}
+
+```
