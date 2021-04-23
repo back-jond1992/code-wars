@@ -7,3 +7,18 @@ function getCount(str) {
   }
 
   ```
+
+## Mumbling
+
+```js
+
+function accum(str) {
+  let letters = str.split('');
+  let result = [];
+  for (let i = 0; i < letters.length; i++) {
+    result.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()));
+  }
+  return result.join('-');
+}
+
+```
