@@ -22,3 +22,13 @@ function accum(str) {
 }
 
 ```
+
+## Disemvowel Trolls
+
+```js
+
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, "");
+}
+
+```
