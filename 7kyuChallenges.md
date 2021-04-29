@@ -87,3 +87,36 @@ function getMiddle(s) {
 }
 
 ```
+
+## Isograms
+
+```js
+
+function isIsogram(str){
+  let result = str.toLowerCase().split("").sort().join("").match(/(.)\1+/g);
+  if(result === null) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+```
+
+## Shortest Word
+
+```js
+
+function findShort(str){
+  let arrayOfWords = str.split(" ");
+  let shortestWord = 100;
+  
+  for(let i = 0; i < arrayOfWords.length; i++) {
+    if(arrayOfWords[i].length < shortestWord) {
+      shortestWord = arrayOfWords[i].length;
+    }
+  }
+  return shortestWord;
+}
+
+```
