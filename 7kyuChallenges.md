@@ -120,3 +120,13 @@ function findShort(str){
 }
 
 ```
+
+## Jaden Casing Strings
+
+```js
+
+String.prototype.toJadenCase = function () {
+  return this.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+};
+
+```
