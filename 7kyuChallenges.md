@@ -130,3 +130,27 @@ String.prototype.toJadenCase = function () {
 };
 
 ```
+
+## Exes and Ohs
+
+```js
+
+function XO(str) {
+  let X = [];
+  let O = [];
+  let arr = str.toLowerCase().split("");
+  for(let i = 0; i < arr.length; i++)
+    if(arr[i] === 'x') {
+      X.push(arr[i]);
+    } else if(arr[i] === 'o') {
+      O.push(arr[i]);
+    } 
+  
+  if(X.length === O.length) {
+    return true;
+  } else{
+    return false;
+  }
+}
+
+```
