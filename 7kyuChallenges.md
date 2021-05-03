@@ -154,3 +154,60 @@ function XO(str) {
 }
 
 ```
+
+## Complementary DNA
+
+```js
+
+function DNAStrand(dna){
+ let dnaArray = dna.split("");
+ let oppossiteStrand = []
+  for(let i = 0; i < dnaArray.length; i++) {
+    switch(dnaArray[i]) {
+        case "A":
+        oppossiteStrand.push("T");
+        break;
+        case "T":
+        oppossiteStrand.push("A")
+        break;
+        case "G":
+        oppossiteStrand.push("C")
+        break;
+        case "C":
+        oppossiteStrand.push("G")
+        break;
+        default:
+        return "This is not DNA"
+    } 
+  }
+  return oppossiteStrand.join("")
+}
+
+```
+
+## List Filtering 
+
+```js
+
+function filter_list(list) {
+  return list.filter((value) => typeof value === "number");
+}
+
+```
+
+## Sum of Numbers
+
+```js
+
+function getSum(a,b){
+  let min = Math.min(a,b);
+  let max = Math.max(a,b);
+  let result = 0;
+  for(let i = min; i <= max; i++) {
+    result += i;
+  }
+  return result
+}
+
+```
+
