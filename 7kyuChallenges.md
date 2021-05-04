@@ -211,3 +211,18 @@ function getSum(a,b){
 
 ```
 
+## Credit Card Mask
+
+```js
+
+function maskify(cc) {
+  if(cc.length > 4) {
+    return cc.split("").slice(0, -4).map((value) => value = "#").join("") + cc.slice(-4)
+    } else {
+      return cc;
+    }
+  }
+
+  ```
+
+  
