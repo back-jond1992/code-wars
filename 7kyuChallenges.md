@@ -231,9 +231,22 @@ function maskify(cc) {
 
 function nbYear(p0, percent, aug, p) {
   let numberOfYears = 0;
-  while(p0 < p)
+  while(p0 < p) {
   p0 = p0 + p0 * (percent/100) + aug;
-  numberOfYears += 1;
+  numberOfYears ++
+  }
+  return numberOfYears;
+}
+
+```
+
+## Sum of Two Lowest Integers
+
+```js
+
+function sumTwoSmallestNumbers(numbers) {  
+  let sortedNumbers = numbers.sort((a, b) => a - b);
+  return sortedNumbers[0] + sortedNumbers[1];
 }
 
 ```
