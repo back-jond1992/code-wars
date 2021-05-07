@@ -250,3 +250,13 @@ function sumTwoSmallestNumbers(numbers) {
 }
 
 ```
+
+## Two to One
+
+```js
+
+function longest(s1, s2) {
+  return s1.concat(s2).replace(/(.)(?=.*\1)/g, "").split("").sort().join("");
+}
+
+```
