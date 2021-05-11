@@ -260,3 +260,40 @@ function longest(s1, s2) {
 }
 
 ```
+
+## Sum of Odd Numbers
+
+```js
+
+function rowSumOddNumbers(n) {
+	return Math.pow(n, 3);
+}
+
+```
+
+## Regex Validate Pin Code
+
+```js
+
+function validatePIN (pin) {
+  if(pin.match(/^\d{4}$/) || pin.match(/^\d{6}$/)) {
+    return true
+  } else {
+    return false
+  }
+}
+
+```
+
+## Printer Errors
+
+```js
+
+function printerError(s) {
+  let total = s.length;
+  let good = s.match(/[a-m]/g).length;
+  let bad = s.length - good;
+  return bad + '/' + total;
+}
+
+```
