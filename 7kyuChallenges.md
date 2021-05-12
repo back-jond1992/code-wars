@@ -297,3 +297,18 @@ function printerError(s) {
 }
 
 ```
+
+## Find The Next Perfect Square
+
+```js
+
+function findNextSquare(sq) {
+  if(Math.sqrt(sq) % 1 === 0) {
+    let squareRoot = Math.sqrt(sq);
+    return (squareRoot + 1) ** 2;
+  } else {
+  return -1;
+  }
+}
+
+```
