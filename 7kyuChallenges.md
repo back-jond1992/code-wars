@@ -312,3 +312,21 @@ function findNextSquare(sq) {
 }
 
 ```
+
+## Categorize New Member
+
+```js
+
+function openOrSenior(data){
+  let membersList = [];
+  for(let i = 0; i < data.length; i++) {
+   if(data[i][0] >= 55 && data[i][1] > 7) {
+     membersList.push('Senior')
+  }else {
+    membersList.push('Open')
+    }
+  }
+  return membersList;
+}
+
+```
