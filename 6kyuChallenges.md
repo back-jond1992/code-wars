@@ -35,3 +35,19 @@ function findOdd(A) {
 }
 
 ```
+
+## Sum of Digits/Digital Roots
+
+```js
+
+function digital_root(N) {
+  let sumOfDigits = N.toString().split('').map(Number).reduce((a, b) => a + b, 0)
+  let counter = 10
+  if(sumOfDigits < counter) {
+    return sumOfDigits
+  } else if(sumOfDigits >= sumOfDigits) {
+    return sumOfDigits.toString().split('').map(Number).reduce((a, b) => a + b, 0)
+  }
+}
+  
+```
