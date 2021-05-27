@@ -40,14 +40,11 @@ function findOdd(A) {
 
 ```js
 
-function digital_root(N) {
-  let sumOfDigits = N.toString().split('').map(Number).reduce((a, b) => a + b, 0)
-  let counter = 10
-  if(sumOfDigits < counter) {
-    return sumOfDigits
-  } else if(sumOfDigits >= sumOfDigits) {
-    return sumOfDigits.toString().split('').map(Number).reduce((a, b) => a + b, 0)
-  }
+function digital_root(n) {
+  if (n < 10) return n;  
+  
+  return digital_root(
+    n.toString().split('').map(Number).reduce((a, b) => a + b, 0))
 }
   
 ```
