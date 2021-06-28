@@ -65,3 +65,17 @@ function spinWords(string){
 }
 
 ```
+
+## Palindrome Checker (FREECODECAMP)
+
+```js
+
+function palindrome(str) {
+  let str1 = str.toLowerCase().replace(/[\W_]/g,"");
+  let str2 = str1.split("").reverse().join("");
+  return (str1 === str2)
+}
+
+palindrome("not a palindrome");
+
+```
