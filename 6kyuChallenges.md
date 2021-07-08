@@ -254,3 +254,25 @@ function likes(names) {
 }
 
 ```
+
+## Counting Duplicate
+
+```js
+
+function duplicateCount(text){
+  let counter = 0
+  let sortedString = text.toLowerCase().split("").sort().join("");
+  let groupedString = sortedString.match(/([a-z])\1*/g)
+  if(groupedString == null) {
+    return 0
+  } else if (groupedString != null) {
+    for(let i = 0; i < groupedString.length; i++) {
+      if(groupedString[i].length > 1) {
+      counter += 1
+      }
+    }
+  }
+  return counter
+}
+
+```
