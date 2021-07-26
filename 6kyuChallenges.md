@@ -276,3 +276,5 @@ function duplicateCount(text){
 }
 
 ```
+
+## Persistent Bugger
