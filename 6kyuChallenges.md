@@ -291,3 +291,26 @@ function persistence(num) {
 }
 
 ```
+
+## Find The Parity Outlier
+
+```js
+
+function findOutlier(integers){
+  let even = [];
+  let odd = [];
+  for(let i = 0; i < integers.length; i++) {
+    if(integers[i] % 2 == 0) {
+      even.push(integers[i])
+    } else {
+      odd.push(integers[i])
+    }
+  }
+  if(odd.length < even.length) {
+    return Number(odd);
+  } else {
+    return Number(even);
+  }
+}
+
+```
