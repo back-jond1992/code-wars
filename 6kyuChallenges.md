@@ -314,3 +314,5 @@ function findOutlier(integers){
 }
 
 ```
+
+## Array.diff
