@@ -316,3 +316,13 @@ function findOutlier(integers){
 ```
 
 ## Array.diff
+
+```js
+
+function arrayDiff(a, b) {
+  let filterValues = b;
+  let arr = a;
+  return arr.filter(item => !filterValues.includes(item))
+}
+
+```
