@@ -351,3 +351,25 @@ function friend(friends){
 }
 
 ```
+
+## Largest 5 digit number in a series
+
+```js
+
+function solution(digits){
+  if(digits.length <= 5) {
+    return Number(digits)
+  }
+  
+  let largestNumber = digits.slice(0, 5)
+  
+  for(let i = 1; i < digits.length - 4; i++) {
+    let chunk = digits.slice(i, i + 5)
+    if(chunk > largestNumber) {
+      largestNumber = chunk
+    }
+  }
+  return Number(largestNumber)
+}
+
+```
