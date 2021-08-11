@@ -373,3 +373,47 @@ function solution(digits){
 }
 
 ```
+
+## Driving School Series #1
+
+```js
+
+function passed (list) { 
+  let count = 0;
+  let passes = 0;
+  
+  for(let i = 0; i < list.length; i++) {
+    if(list[i] < 19) {
+      passes += list[i];
+      count += 1;
+    }
+  }
+  if(passes == 0) {
+    return 'No pass scores registered.'
+  } else {
+    return Math.round(passes / count)
+  }
+} 
+
+```
+
+2nd pass: 
+
+```js
+
+function passed (list) { 
+  let sumOfScores = list.filter(passes).reduce((a, b) => a + b, 0);
+  let result = sumOfScores / list.filter(passes).length;
+  
+  if(list.filter(passes) == 0) {
+    return 'No pass scores registered.'
+  } else {
+    return Math.round(result);
+  }
+  
+  function passes(scores) {
+    return scores <= 18;
+  }
+} 
+
+```
