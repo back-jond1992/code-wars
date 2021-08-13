@@ -434,3 +434,46 @@ function cost (mins) {
   
   return cost;
 }  
+
+```
+
+## Binary Addition
+
+```js
+
+function addBinary(a,b) {
+  let sum = a + b;
+  return Number(sum).toString(2);
+}
+
+```
+
+## Is this a triangle?
+
+```js
+
+function isTriangle(a,b,c) {
+  if(a + b > c && a + c > b && b + c > a) {
+    return true
+  } else {
+    return false
+  }
+}
+
+```
+
+## Number of People in the Bus
+
+```js
+
+var number = function(busStops){
+  let peopleOnBus = 0
+  for(let i = 0; i < busStops.length; i++) {
+    let onOff = busStops[i][0] - busStops[i][1]
+    peopleOnBus += onOff
+  }
+  return peopleOnBus;
+}
+
+```
+
