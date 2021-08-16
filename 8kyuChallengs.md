@@ -170,7 +170,7 @@ function countSheeps(arrayOfSheep) {
       counter.push(arrayOfSheep[i]);
     }
   }
-  return counter.;
+  return counter;
 }
 
 ```

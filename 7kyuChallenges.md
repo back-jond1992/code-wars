@@ -477,3 +477,30 @@ var number = function(busStops){
 
 ```
 
+## Find the divisors!
+
+```js
+
+function divisors(integer) {
+  let arrayOfDivisors = [];
+  for(let i = 2; i < integer; i++) {
+    if(integer % i === 0) {
+      arrayOfDivisors.push(i)
+    }
+  }
+  
+  if(isPrime(integer)) {
+    return integer + " is prime"
+  } else {
+    return arrayOfDivisors.sort((a, b) => a - b)
+  }
+  
+  function isPrime(num) {
+    if(num < 2) return false;
+    for(let i = 2; i < num; i++) {
+      if(num % i == 0) return false;
+    }
+    return true;
+  }
+
+```  
