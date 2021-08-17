@@ -504,3 +504,26 @@ function divisors(integer) {
   }
 
 ```  
+
+## Count the number of JavaScript developers coming from Europe
+
+```js
+
+function countDevelopers(list) {
+  return list.filter(word => word.continent === 'Europe' && word.language === 'JavaScript').length;
+}
+
+```
+
+## Higher-Order Functions Series - Greet developers
+
+```js
+
+function greetDevelopers(list) {
+  for (const value in list) {
+    list[value].greeting = "Hi " + list[value].firstName + ", what do you like the most about " + list[value].language + "?" ;
+  }
+  return list;
+}
+
+```
