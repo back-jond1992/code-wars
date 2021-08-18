@@ -527,3 +527,24 @@ function greetDevelopers(list) {
 }
 
 ```
+
+## Higher-Order Functions Series - Is Ruby coming?
+
+```js
+
+function isRubyComing(list) {
+  return list.map((x) => x.language).includes("Ruby");
+}
+
+```
+
+## Higher-Order Functions Series - Find the first Python developer
+
+```js
+
+function getFirstPython(list) {
+  const pythonDeveloper = list.find(x => x.language === 'Python');
+  return pythonDeveloper ? `${pythonDeveloper.firstName}, ${pythonDeveloper.country}` : "There will be no Python developers"
+}
+
+```
