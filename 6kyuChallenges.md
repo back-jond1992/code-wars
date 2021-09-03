@@ -326,3 +326,5 @@ function arrayDiff(a, b) {
 }
 
 ```
+
+## Duplicate Encoder
