@@ -328,3 +328,12 @@ function arrayDiff(a, b) {
 ```
 
 ## Duplicate Encoder
+
+```js
+
+function duplicateEncode(word){
+  word = word.toLowerCase();
+  return word.replace(/./g, letter => word.indexOf(letter) == word.lastIndexOf(letter) ? '(' : ')')
+}
+
+```
