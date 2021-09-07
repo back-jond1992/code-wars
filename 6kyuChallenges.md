@@ -338,14 +338,3 @@ function duplicateEncode(word){
 
 ```
 
-## Can they code in the same language?
-
-```js
-
-function isSameLanguage(list) {
-  let devLanguages = list.map((developer) => developer.language);
-  let languageCheck = devLanguages[0];
-  return devLanguages.every((element) => element === languageCheck);
-}
-
-```

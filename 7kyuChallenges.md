@@ -550,14 +550,8 @@ function getFirstPython(list) {
 ```
 
 ## function SeriesSum(n) {
-  let sum = 0;
-  for(let i = 0; i < n; i++) {
-    sum += 1/(i * 3 + 1);
-  }
-  return sum.toFixed(2);
-}
-
-```js
+  
+```js  
 
 function SeriesSum(n) {
   let sum = 0;
@@ -565,6 +559,29 @@ function SeriesSum(n) {
     sum += 1/(i * 3 + 1);
   }
   return sum.toFixed(2);
+}
+
+```
+
+## Can they code in the same language?
+
+```js
+
+function isSameLanguage(list) {
+  let devLanguages = list.map((developer) => developer.language);
+  let languageCheck = devLanguages[0];
+  return devLanguages.every((element) => element === languageCheck);
+}
+
+```
+
+## Find the most senior developer
+
+```js
+
+function findSenior(list) {
+  let maxAge = list.map((developer) => developer.age).reduce((a, b) => Math.max(a, b))
+  return list.filter((developer) => developer.age === maxAge)
 }
 
 ```
