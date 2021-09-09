@@ -585,3 +585,31 @@ function findSenior(list) {
 }
 
 ```
+
+## Will all continents be represented?
+
+```js
+
+function allContinents(list) {
+  let key = {
+    'Africa': 0, 
+    'Americas': 0,
+    'Asia': 0, 
+    'Europe':  0, 
+    'Oceania': 0
+  }
+  
+  let developerContinents = list.map((developer) => developer.continent)
+  for(let i = 0; i < developerContinents.length; i++) {
+    if(key[developerContinents[i]]) {
+      key[developerContinents[i]] += 1
+    } else {
+      key[developerContinents[i]] = 1
+    }
+  }
+  
+  let result = Object.values(key)
+  return result.every((value) => value >= 1)
+}
+
+```
