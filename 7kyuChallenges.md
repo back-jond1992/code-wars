@@ -613,3 +613,25 @@ function allContinents(list) {
 }
 
 ```
+
+## Is the meetup age-diverse?
+
+```js
+
+function isAgeDiverse(list) {
+  if(list.some(dev => dev.age >= 10 && dev.age < 20) 
+    && list.some(dev => dev.age >= 20 && dev.age < 30) 
+    && list.some(dev => dev.age >= 30 && dev.age < 40) 
+    && list.some(dev => dev.age >= 40 && dev.age < 50) 
+    && list.some(dev => dev.age >= 50 && dev.age < 60) 
+    && list.some(dev => dev.age >= 60 && dev.age < 70)
+    && list.some(dev => dev.age >= 70 && dev.age < 80)
+    && list.some(dev => dev.age >= 80 && dev.age < 90)
+    && list.some(dev => dev.age >= 90 && dev.age < 100) 
+    && list.some(dev => dev.age >= 100)){
+      return true;
+       }
+      return false
+};
+
+```
